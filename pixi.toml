@@ -53,8 +53,8 @@ ros-noetic-aslam-backend = { path = "kalibr/aslam_optimizer/aslam_backend/packag
 ros-noetic-aslam-backend-expressions = { path = "kalibr/aslam_optimizer/aslam_backend_expressions/package.xml" }
 ros-noetic-aslam-backend-python = { path = "kalibr/aslam_optimizer/aslam_backend_python/package.xml" }
 ros-noetic-sparse-block-matrix = { path = "kalibr/aslam_optimizer/sparse_block_matrix/package.xml" }
-ros-noetic-catkin-simple = { path = "kalibr/catkin_simple/package.xml" }
-ros-noetic-bar = { path = "kalibr/catkin_simple/test/scenarios/hello_world/bar/package.xml" }
-ros-noetic-baz = { path = "kalibr/catkin_simple/test/scenarios/hello_world/baz/package.xml" }
-ros-noetic-foo = { path = "kalibr/catkin_simple/test/scenarios/hello_world/foo/package.xml" }
+# ros-noetic-catkin-simple = { path = "kalibr/catkin_simple/package.xml" }
+# ros-noetic-bar = { path = "kalibr/catkin_simple/test/scenarios/hello_world/bar/package.xml" }
+# ros-noetic-baz = { path = "kalibr/catkin_simple/test/scenarios/hello_world/baz/package.xml" }
+# ros-noetic-foo = { path = "kalibr/catkin_simple/test/scenarios/hello_world/foo/package.xml" }
 ros-noetic-opencv2-catkin = { path = "kalibr/opencv2_catkin/package.xml" }
