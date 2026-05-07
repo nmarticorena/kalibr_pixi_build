@@ -1,0 +1,60 @@
+[workspace]
+authors = ["nmarticorena <nicolas.marticorena.vidal@gmail.com>"]
+channels = [
+    "https://prefix.dev/pixi-build-backends",
+    "https://prefix.dev/robostack-noetic",      
+    "https://prefix.dev/conda-forge",
+]
+name = "kalibr_conda"
+platforms = ["linux-64"]
+version = "0.1.0"
+preview = ["pixi-build"]
+
+[package.build]
+backend = { name = "pixi-build-ros", version = "*" }
+
+[package.build.config]
+distro = "noetic"  # or "humble", "noetic", "iron", etc.
+
+[tasks]
+
+[dependencies]
+# ros-noetic-numpy-eigen = { path = "kalibr/Schweizer-Messer/numpy_eigen/package.xml" }
+ros-noetic-python-module = { path = "kalibr/Schweizer-Messer/python_module/package.xml" }
+# ros-noetic-sm-boost = { path = "kalibr/Schweizer-Messer/sm_boost/package.xml" }
+ros-noetic-sm-common = { path = "kalibr/Schweizer-Messer/sm_common/package.xml" }
+# ros-noetic-sm-eigen = { path = "kalibr/Schweizer-Messer/sm_eigen/package.xml" }
+# ros-noetic-sm-kinematics = { path = "kalibr/Schweizer-Messer/sm_kinematics/package.xml" }
+# ros-noetic-sm-logging = { path = "kalibr/Schweizer-Messer/sm_logging/package.xml" }
+# ros-noetic-sm-matrix-archive = { path = "kalibr/Schweizer-Messer/sm_matrix_archive/package.xml" }
+# ros-noetic-sm-opencv = { path = "kalibr/Schweizer-Messer/sm_opencv/package.xml" }
+# ros-noetic-sm-property-tree = { path = "kalibr/Schweizer-Messer/sm_property_tree/package.xml" }
+# ros-noetic-sm-python = { path = "kalibr/Schweizer-Messer/sm_python/package.xml" }
+# ros-noetic-sm-random = { path = "kalibr/Schweizer-Messer/sm_random/package.xml" }
+# ros-noetic-sm-timing = { path = "kalibr/Schweizer-Messer/sm_timing/package.xml" }
+# ros-noetic-aslam-cameras = { path = "kalibr/aslam_cv/aslam_cameras/package.xml" }
+# ros-noetic-aslam-cameras-april = { path = "kalibr/aslam_cv/aslam_cameras_april/package.xml" }
+# ros-noetic-aslam-cv-backend = { path = "kalibr/aslam_cv/aslam_cv_backend/package.xml" }
+# ros-noetic-aslam-cv-backend-python = { path = "kalibr/aslam_cv/aslam_cv_backend_python/package.xml" }
+# ros-noetic-aslam-cv-error-terms = { path = "kalibr/aslam_cv/aslam_cv_error_terms/package.xml" }
+# ros-noetic-aslam-cv-python = { path = "kalibr/aslam_cv/aslam_cv_python/package.xml" }
+# ros-noetic-aslam-cv-serialization = { path = "kalibr/aslam_cv/aslam_cv_serialization/package.xml" }
+# ros-noetic-aslam-imgproc = { path = "kalibr/aslam_cv/aslam_imgproc/package.xml" }
+# ros-noetic-aslam-time = { path = "kalibr/aslam_cv/aslam_time/package.xml" }
+# ros-noetic-incremental-calibration = { path = "kalibr/aslam_incremental_calibration/incremental_calibration/package.xml" }
+# ros-noetic-incremental-calibration-python = { path = "kalibr/aslam_incremental_calibration/incremental_calibration_python/package.xml" }
+# ros-noetic-aslam-splines = { path = "kalibr/aslam_nonparametric_estimation/aslam_splines/package.xml" }
+# ros-noetic-aslam-splines-python = { path = "kalibr/aslam_nonparametric_estimation/aslam_splines_python/package.xml" }
+# ros-noetic-bsplines = { path = "kalibr/aslam_nonparametric_estimation/bsplines/package.xml" }
+# ros-noetic-bsplines-python = { path = "kalibr/aslam_nonparametric_estimation/bsplines_python/package.xml" }
+# ros-noetic-ethz-apriltag2 = { path = "kalibr/aslam_offline_calibration/ethz_apriltag2/package.xml" }
+# ros-noetic-kalibr = { path = "kalibr/aslam_offline_calibration/kalibr/package.xml" }
+# ros-noetic-aslam-backend = { path = "kalibr/aslam_optimizer/aslam_backend/package.xml" }
+# ros-noetic-aslam-backend-expressions = { path = "kalibr/aslam_optimizer/aslam_backend_expressions/package.xml" }
+# ros-noetic-aslam-backend-python = { path = "kalibr/aslam_optimizer/aslam_backend_python/package.xml" }
+# ros-noetic-sparse-block-matrix = { path = "kalibr/aslam_optimizer/sparse_block_matrix/package.xml" }
+# # ros-noetic-catkin-simple = { path = "kalibr/catkin_simple/package.xml" }
+# # ros-noetic-bar = { path = "kalibr/catkin_simple/test/scenarios/hello_world/bar/package.xml" }
+# # ros-noetic-baz = { path = "kalibr/catkin_simple/test/scenarios/hello_world/baz/package.xml" }
+# # ros-noetic-foo = { path = "kalibr/catkin_simple/test/scenarios/hello_world/foo/package.xml" }
+# ros-noetic-opencv2-catkin = { path = "kalibr/opencv2_catkin/package.xml" }
